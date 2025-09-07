@@ -1,3 +1,10 @@
+import sys
+
+sys.path.append("C:\\GitHub\\vnpy")
+sys.path.append("C:\\GitHub\\vnpy_ctp")
+sys.path.append("C:\\GitHub\\vnpy_sqlite")
+sys.path.append("C:\\GitHub\\vnpy_tushare")
+
 from vnpy.event import EventEngine
 
 from vnpy.trader.engine import MainEngine
@@ -24,8 +31,8 @@ from vnpy_ctp import CtpGateway
 # from vnpy_hft import GtjaGateway
 
 # from vnpy_paperaccount import PaperAccountApp
-from vnpy_ctastrategy import CtaStrategyApp
-from vnpy_ctabacktester import CtaBacktesterApp
+# from vnpy_ctastrategy import CtaStrategyApp
+# from vnpy_ctabacktester import CtaBacktesterApp
 # from vnpy_spreadtrading import SpreadTradingApp
 # from vnpy_algotrading import AlgoTradingApp
 # from vnpy_optionmaster import OptionMasterApp
@@ -34,7 +41,7 @@ from vnpy_ctabacktester import CtaBacktesterApp
 # from vnpy_chartwizard import ChartWizardApp
 # from vnpy_rpcservice import RpcServiceApp
 # from vnpy_excelrtd import ExcelRtdApp
-from vnpy_datamanager import DataManagerApp
+# from vnpy_datamanager import DataManagerApp
 # from vnpy_datarecorder import DataRecorderApp
 # from vnpy_riskmanager import RiskManagerApp
 # from vnpy_webtrader import WebTraderApp
@@ -72,8 +79,8 @@ def main():
     # main_engine.add_gateway(NhStockGateway)
 
     # main_engine.add_app(PaperAccountApp)
-    main_engine.add_app(CtaStrategyApp)
-    main_engine.add_app(CtaBacktesterApp)
+    # main_engine.add_app(CtaStrategyApp)
+    # main_engine.add_app(CtaBacktesterApp)
     # main_engine.add_app(SpreadTradingApp)
     # main_engine.add_app(AlgoTradingApp)
     # main_engine.add_app(OptionMasterApp)
@@ -82,7 +89,7 @@ def main():
     # main_engine.add_app(ChartWizardApp)
     # main_engine.add_app(RpcServiceApp)
     # main_engine.add_app(ExcelRtdApp)
-    main_engine.add_app(DataManagerApp)
+    # main_engine.add_app(DataManagerApp)
     # main_engine.add_app(DataRecorderApp)
     # main_engine.add_app(RiskManagerApp)
     # main_engine.add_app(WebTraderApp)
